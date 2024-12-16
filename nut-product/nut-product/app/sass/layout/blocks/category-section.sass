@@ -1,0 +1,105 @@
+.category-section
+	background-size: 200vw 200vh
+	&.fp-completely
+		animation: 15s infinite verticalGranimate
+
+	&__container
+		padding-top: 6.85vh
+		+lg
+			padding-top: 40px
+			padding-bottom: 40px
+
+	&__mobile-img-wrap
+		display: none
+		justify-content: center
+		align-items: center
+		// width: 600px
+		// height: 550px
+		+lg
+			display: flex
+			margin-bottom: 60px
+		+sm
+			min-width: 400px
+
+	&__title
+		text-align: center
+		margin-bottom: 23px
+		+xxl
+			margin-bottom: 15px
+		+lg
+			margin-bottom: 65px
+		&-wrap
+			position: relative
+			z-index: 5
+			display: flex
+			flex-direction: column
+			align-items: center
+
+	&__link
+		display: inline-block
+
+	&__btn-oval
+		&-wrap
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			bottom: 4.029vh
+			left: 50%
+			transform: translateX(-50%)
+			z-index: 3
+			+lg
+				display: none
+
+	&--flour
+		background-image: linear-gradient(353.81deg, #A6C1EE 3.04%, #FBC2EB 121.9%)
+
+	&--mash
+		background-image: linear-gradient(170.83deg, #FFFDCA -20.83%, #F3E0A0 103.63%)
+
+	&--paste
+		background-image: linear-gradient(157.27deg, #D4D1C4 11.2%, #FFFACD 90.81%)
+
+	&--praline
+		background-image: linear-gradient(171.33deg, #FFD28E -10.85%, #FFD28E 105.61%)
+
+	&--spices
+		background-image: linear-gradient(163.08deg, #DFE9F3 7.77%, #FFFFFF 88.26%)
+
+	&--nuts
+		background-image: linear-gradient(163.81deg, #D4FC79 7.85%, #96E6A1 97.52%)
+
+	&--chopped-nuts
+		background-image: linear-gradient(9.64deg, #BDC2E8 3.59%, #BDC2E8 4.64%, #E6DEE9 109.15%)
+
+	&--inventory
+		background-image: linear-gradient(354.02deg, #A8EDEA -45.5%, #FED6E3 116.3%)
+
+	&--marchpane
+		background-image: linear-gradient(169.06deg, #DDD6F3 -13.55%, #FAACA8 102.69%, #FAACA8 102.69%)
+
+	&--fried-onion
+		background-image: linear-gradient(177.32deg, rgba(243, 221, 169, 0.37) 2.1%, rgba(243, 221, 169, 0.37) 2.11%, #F3DDA9 74.16%, #F3DDA9 74.16%);
+
+
+@keyframes verticalGranimate
+	0%
+		background-position: 43% 0%
+	50%
+		background-position: 58% 100%
+	100%
+		background-position: 43% 0%
+
+@keyframes granimate
+	0%,100%
+		background-position: 0 0
+	25%,75%
+		background-position: 50% 50%
+	50%
+		background-position: 0 100%
+
+@keyframes animationBg
+	0%,100%
+		background-position: 0 0
+	50%
+		background-position: 93% 100%

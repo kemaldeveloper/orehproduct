@@ -1,0 +1,110 @@
+footer.b-footer
+	._top-line
+		.container
+			.row._row
+				._col.-left
+					a.b-logo.-medium._logo(href="index.html")
+						img._img(src="img/logo/footer-logo.svg", alt="")
+				._col.-center
+					._small-title Телефон / факс
+					a.b-phone.-white.-normal.-big._phone(href="tel:+74959611721") +7 (495) 961-17-21
+					a.b-trs-btn.-green.-small._btn.js-popup(href="#ask-popup") Оставить заявку
+					._small-title E-mail
+					a.b-email.-green.-big._email(href="mailto:peresvet@orehprodukt.ru") peresvet@orehprodukt.ru
+				._col.-right
+					._small-title Адрес
+					._address-text г. Москва, м. Шелепиха, <br>Шмитовский проезд, дом 34, стр. <br>2, этаж 1, офис 7.
+	._bottom-line
+		.container
+			.row._row
+				._bottom-col.-left
+					._copyright © 2020, «Orehprodukt.ru». Все права защищены.
+				._bottom-col.-right
+					ul.b-socials._socials
+						li._item
+							a._link(href="#")
+								include ../../img/icons/instagram.svg
+						li._item
+							a._link(href="#")
+								include ../../img/icons/dzen.svg
+						li._item
+							a._link(href="#")
+								include ../../img/icons/telegram.svg
+						li._item
+							a._link(href="#")
+								include ../../img/icons/vk.svg
+						li._item
+							a._link(href="#")
+								include ../../img/icons/whatsapp.svg
+						li._item
+							a._link(href="#")
+								include ../../img/icons/youtube.svg
+|
+// Catalog popup
+include ./modules/catalog-popup
+|
+|
+// Menu popup
+include ./modules/menu-popup
+|
+|
+// Menu popup
+include ./modules/ask-popup
+
+// Product popup
+.b-mfp.-product.zoom-anim-dialog.mfp-hide#product
+	.b-product-info
+		.b-preloader
+			._circle
+		._row
+			._col.-left
+				._content.-left
+					._container.-left
+						._sliders-wrap
+							//- .b-product-slider.owl-carousel._product-slider
+								//- ._item
+								//- 	._img-wrap
+								//- 		img._img(src="img/categories/paste/item2.png", alt="")
+								//- ._item
+								//- 	._img-wrap
+								//- 		img._img(src="img/popup-img.png", alt="")
+							//- .b-product-slider-navigation
+								//- ._item
+								//- 	._img-wrap
+								//- 		img._img(src="img/categories/paste/item2.png", alt="")
+								//- ._item
+								//- 	._img-wrap
+								//- 		img._img(src="img/popup-img.png", alt="")
+			._col.-right
+				//- ._content.-right
+					._container.-right
+						._img-title.-right Паста
+						h2._title Миндальная паста
+						.b-info-list._info-list
+						._toggle-desc
+							._desc
+						a.link._link(href="#") Показать всё
+						._btn-wrap
+							a.b-btn.-small._order-btn.js-popup(href="#ask-popup") Заказать образец
+							a.b-trs-btn.-small._offer-btn.js-popup(href="#ask-popup") Получить предложение
+
+
+// Request popup
+include ./modules/request-popup
+
+|
+|
+|
+// Success popup
+.b-mfp.-succes-popup.zoom-anim-dialog.mfp-hide#success
+	.b-form-result.-success
+		.b-mess
+			._title Спасибо!
+			._desc Мы свяжемся с Вами в ближайщее время
+
+|
+|
+|
+// Scripts
+script(src="js/libs.min.js")
+script(src="js/main.min.js")

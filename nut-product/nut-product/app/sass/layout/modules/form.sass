@@ -1,0 +1,45 @@
+// Inputs
+.input-wrap
+	margin-bottom: 30px
+
+input,
+textarea
+	width: 100%
+	font-size: 17px
+	line-height: 17px
+	color: $c1
+	padding: 0 0 21px 0
+	border: none
+	border-bottom: 1px solid #DBDBDB
+	transition: all .3s ease
+	+lg
+		padding: 0 0 18px 0
+		font-size: 16px
+		line-height: 16px
+	+sm
+		font-size: 15px
+		line-height: 15px
+		padding: 0 0 13px 0
+
+	&:focus
+		outline: none
+		border-color: $c1
+	&:disabled
+		background: #fff
+	&.error
+		border-color: #FF0000
+		color: #FF0000
+	&.valid
+		border-color: #179B3C
+		color: #179B3C
+
+::placeholder
+	color: $c1
+
+textarea
+	resize: none
+	padding: 4px 0 22px 0
+	+lg
+		padding: 4px 0 18px 0
+	+sm
+		padding: 4px 0 13px 0

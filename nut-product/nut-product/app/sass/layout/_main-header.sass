@@ -1,0 +1,24 @@
+.main-header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 40px 50px 0
+	width: 100%
+	position: fixed
+	top: 0
+	left: 50%
+	transform: translateX(-50%)
+	z-index: 10
+	+lg
+		padding: 15px 15px 0
+		position: absolute
+
+	&__hamburger
+		margin-left: auto
+		display: flex
+		+min_lg
+			opacity: 0
+
+	&__logo
+		+min_lg
+			transition-delay: 0.8s

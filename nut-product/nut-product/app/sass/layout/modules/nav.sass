@@ -1,0 +1,23 @@
+.nav
+	+lg
+		display: none
+
+	&__list
+		display: flex
+		align-items: center
+
+	li
+		&:not(:last-child)
+			margin-right: 40.3px
+			+xl
+				margin-right: 20px
+	a
+		font-weight: bold
+		font-size: 16px
+		line-height: 21px
+		color: $c0
+		+xl
+			font-size: 14px
+			line-height: 14px
+		&:hover
+			color: $accent

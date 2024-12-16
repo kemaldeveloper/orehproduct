@@ -1,0 +1,214 @@
+.section
+	padding-bottom: 50px
+	overflow: hidden
+	&--flour
+		.section
+			&__banner
+				margin-bottom: 137px
+				+lg
+					margin-bottom: 125px
+	&--mash
+		.section
+			&__bg-wrap
+				+lg
+					padding: 25px 0 40px
+	&--spices
+		.section
+			&__bg-img-wrap
+				top: auto
+				bottom: 0
+
+	&--small-header
+		padding-bottom: 0
+		+lg
+			padding-top: 25px
+		.section
+			&__bg-wrap
+				height: 138px
+				padding: 0
+				margin-bottom: 59px
+				+lg
+					display: none
+				&:before
+					display: none
+
+	&--about-page
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 395px
+			left: -119px
+			width: 308px
+			height: 284px
+			background: url('../img/about/nut1.png') no-repeat center center
+			background-size: 100% 100%
+			+xxxl
+				width: 250px
+				height: 245px
+				left: -100px
+			+lg
+				display: none
+
+		&:after
+			content: ''
+			position: absolute
+			top: 12px
+			right: 0
+			width: 711px
+			height: 570px
+			background: url('../img/about/nut2.png') no-repeat center center
+			background-size: 100% 100%
+			z-index: 1
+			+xxxl
+				width: 511px
+				height: 470px
+			+lg
+				display: none
+
+	&--inventory
+		.custom-col--small
+			+lg
+				margin-bottom: 40px
+
+	&__content
+		position: relative
+		padding: 55px 0 210px
+		+xl
+			padding: 50px 0 160px
+		+lg
+			padding: 50px 0 110px
+
+	&__bg-wrap
+		position: relative
+		width: 100%
+		padding: 197px 0 144px
+		+lg
+			background: none !important
+			padding: 25px 0 50px
+		&:after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			width: 100%
+			min-width: 1920px
+			height: 28px
+			background: url('../img/categories/top-line.svg') no-repeat
+			background-size: 100% 100%
+			z-index: 1
+			+lg
+				display: none
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			width: 100%
+			height: 154px
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.19) 100%)
+			opacity: 0.22
+			z-index: 0
+			+lg
+				display: none
+
+	&__bg-img-wrap
+		position: absolute
+		top: 0
+		right: 0
+		z-index: 1
+		+lg
+			display: none
+
+	&__title
+		margin-bottom: 21px
+		+lg
+			margin-bottom: 20px
+	&__top-container
+		position: relative
+		z-index: 1
+	&__container
+		// padding-top: 116px
+		+min_lg
+			padding-top: 70px
+
+	&__product-title
+		position: relative
+		z-index: 1
+		margin-bottom: 0
+		background: #fff
+		display: inline-block
+		padding: 0 30px 0 10px
+		+lg
+			text-align: center
+			padding: 0 30px 0 0
+		+sm
+			padding: 0 22px
+		&-wrap
+			position: relative
+			display: flex
+			align-items: center
+			margin-bottom: 70px
+			+sm
+				margin-bottom: 50px
+				justify-content: center
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				left: 0
+				transform: translateY(-50%)
+				width: calc( 100% - 25px)
+				height: 1px
+				background: #EEE8D9
+				margin-top: 3px
+
+	&__banner
+		margin-top: 20px
+		margin-bottom: 120px
+		+lg
+			margin-top: 30px
+
+	&__bourbon-banner
+		margin-bottom: 49px
+
+	&__desc
+		font-family: $roboto
+		font-size: 16px
+		line-height: 28px
+		color: #000000
+		max-width: 750px
+		p
+			margin-bottom: 0
+			// &:not(:last-child)
+			// 	margin-bottom: 15px
+		+xl
+			max-width: 590px
+		+lg
+			margin-bottom: 30px
+		+sm
+			font-size: 14px
+			line-height: 26px
+		&-wrap
+			display: flex
+			justify-content: space-between
+			margin-bottom: 35px
+			+lg
+				flex-direction: column
+				margin-bottom: 60px
+
+	&__btn-oval
+		&-wrap
+			padding-top: 18px
+			padding-right: 11px
+			+xl
+				padding: 0
+				+min_sm
+					max-width: 350px
+
+	&__products
+		margin-bottom: 80px
+		+lg
+			margin-bottom: 50px

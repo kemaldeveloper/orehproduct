@@ -1,0 +1,34 @@
+header.b-header
+	.container
+		.row._row
+			._col.-left
+				._logo-wrap
+					a.b-logo._logo(href="index.html")
+						img._img(src="img/logo/logo.svg", alt="")
+					a.b-logo.-mobile-logo._logo(href="index.html")
+						span._img-wrap
+							img._img(src="img/logo/mobile-logo.png", alt="")
+						span._text Орехпродукт
+					a.b-btn.-green._btn.js-popup(href="#catalog")
+						span._icon-wrap
+							+icon('hamburger')
+						span._text Каталог
+			._col.-center
+				nav.b-nav
+					ul._list
+						li._item
+							a._link(href="about.html") О компании
+						li._item
+							a._link(href="services.html") Услуги
+						li._item
+							a._link(href="partners.html") Партнерам
+						li._item
+							a._link(href="contacts.html") Контакты
+			._col.-right
+				a.b-phone.-accent._phone(href="tel:+74959611721")
+					span._icon-wrap
+						+icon('square-phone')
+					span._text +7 (495) 961-17-21
+				a.b-hamburger.-green.-small.-slider._hamburger.js-menu.js-popup(href="#menu")
+					span.hamburger-box
+						span.hamburger-inner
