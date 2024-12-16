@@ -23,21 +23,29 @@ const gulpSass = require('gulp-sass');
 const nodeSass = require('node-sass');
 const sass = gulpSass(nodeSass);
 
+const jsLibsPaths = [
+  'app/libs/jquery/dist/jquery.min.js',
+  'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+  'app/libs/fullPage.js-master/fullPage.js-master/dist/fullpage.js',
+  'app/libs/gsap/gsap.min.js',
+  'app/libs/owl.carousel/dist/owl.carousel.min.js',
+  'app/libs/fancybox/dist/jquery.fancybox.min.js',
+  'app/libs/lazyload/lazyload.min.js',
+  'app/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js',
+  'app/libs/jQuery-Plugin-For-matchMedia-API/dist/jquery.matchMedia.js',
+  'app/libs/svg4everybody-master/svg4everybody-master/dist/svg4everybody.min.js',
+  'app/libs/jquery-validation/dist/jquery.validate.min.js',
+];
+
+const cssLibsPaths = [
+  'app/libs/magnific-popup/dist/magnific-popup.css', 
+  'app/libs/owl.carousel/dist/assets/owl.carousel.min.css',
+  'app/libs/fancybox/dist/jquery.fancybox.css'
+];
+
 // js libs
 function jsLibs() {
-  return src([
-    'app/libs/jquery/dist/jquery.min.js',
-    'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-    'app/libs/fullPage.js-master/fullPage.js-master/dist/fullpage.js',
-    'app/libs/gsap/gsap.min.js',
-    'app/libs/owl.carousel/dist/owl.carousel.min.js',
-    'app/libs/fancybox/dist/jquery.fancybox.min.js',
-    'app/libs/lazyload/lazyload.min.js',
-    'app/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js',
-    'app/libs/jQuery-Plugin-For-matchMedia-API/dist/jquery.matchMedia.js',
-    'app/libs/svg4everybody-master/svg4everybody-master/dist/svg4everybody.min.js',
-    'app/libs/jquery-validation/dist/jquery.validate.min.js',
-  ])
+  return src(jsLibsPaths)
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js'))
@@ -46,7 +54,7 @@ function jsLibs() {
 
 // css libs
 function cssLibs() {
-  return src(['app/libs/magnific-popup/dist/magnific-popup.css', 'app/libs/owl.carousel/dist/assets/owl.carousel.min.css', 'app/libs/fancybox/dist/jquery.fancybox.css'])
+  return src(cssLibsPaths)
     .pipe(concat('libs.min.css'))
     .pipe(autoprefixer(['last 10 versions']))
     .pipe(cleancss({ level: { 1: { specialComments: 0 } } }))
